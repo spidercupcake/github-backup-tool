@@ -1,0 +1,21 @@
+{
+  "name": "github-backup-tool",
+  "author": "spidercupcake",
+  "version": "1.0.0",
+  "description": "A CLI tool to backup GitHub repositories",
+  "main": "github-backup.js",
+  "type": "module",
+  "bin": {
+    "github-backup": "./github-backup.js"
+  },
+  "scripts": {
+    "gitbackup": "node github-backup.js"
+  },
+  "dependencies": {
+    "@octokit/rest": "^19.0.7",
+    "commander": "^10.0.1",
+    "dotenv": "^16.0.3",
+    "node-cron": "^3.0.2",
+    "simple-git": "^3.19.0"
+  }
+}
